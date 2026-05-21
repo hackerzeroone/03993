@@ -11,7 +11,7 @@ https://.../index.min.json
 Do not use the GitHub web/tree URL. Use the raw file URL:
 
 ```text
-https://raw.githubusercontent.com/hackerzeroone/aniyomi-adult-extensions/main/index.min.json
+https://raw.githubusercontent.com/hackerzeroone/aniyomi-extensions/main/index.min.json
 ```
 
 ## `begin -1, end 0, length 6818`
@@ -28,3 +28,7 @@ scriptPart.subSequence(
 When PornHub's embed page no longer contains those old markers, both `indexOf` calls return `-1`, which becomes `begin -1, end 0`.
 
 The PornHub APK in this prepared repo was rebuilt with a safer extractor that searches for `mediaDefinitions`, validates missing markers, and returns a clear error instead of slicing with `-1`.
+
+## PornHub video 404
+
+PornHub now blocks stream data from some `/embed/{viewkey}` pages. The `13.7` PornHub APK loads stream data from the normal `/view_video.php?viewkey=...` page instead and uses `https://www.pornhub.com` consistently for details, episode, and video requests.
