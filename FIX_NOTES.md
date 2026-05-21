@@ -31,4 +31,4 @@ The PornHub APK in this prepared repo was rebuilt with a safer extractor that se
 
 ## PornHub video 404
 
-PornHub now blocks stream data from some `/embed/{viewkey}` pages. The `13.7` PornHub APK loads stream data from the normal `/view_video.php?viewkey=...` page instead and uses `https://www.pornhub.com` consistently for details, episode, and video requests.
+PornHub now blocks stream data from some `/embed/{viewkey}` pages. The `13.8` PornHub APK loads stream data from the normal `/view_video.php?viewkey=...` page, sends age/platform cookies, returns playback URLs with PornHub referer headers, and uses fallbacks similar to yt-dlp: `flashvars_*`, JS quality variables, `/video/get_media`, and direct download links.
