@@ -1,7 +1,7 @@
 {
   "meta": {
-    "name": "Aniyomi Adult Extensions",
-    "shortName": "AdultExt",
+    "name": "Feed",
+    "shortName": "Feed",
     "website": "https://github.com/hackerzeroone/aniyomi-extensions",
     "signingKeyFingerprint": "b2ed9ebdf4c83f31886798e14a936822ab3d5808965640c099317c6096840c37"
   }
